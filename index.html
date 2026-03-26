@@ -368,6 +368,9 @@ that's how much I love you Angel Revilla Perez... I'm always here for you my gir
 
 </div>
 
+
+<audio id="bgMusic" src="audio.mp3" loop></audio>
+
 <script>
 function startExperience() {
     document.getElementById('img1').classList.add('show-left');
@@ -404,7 +407,17 @@ function goBack() {
     document.getElementById('letter').classList.remove('show');
     document.getElementById('collage').classList.remove('show');
     document.getElementById('backBtn').classList.remove('show');
+
 }
+
+
+document.body.addEventListener('click', () => {
+        const music = document.getElementById('bgMusic');
+        music.play();
+    }, { once: true });
+
+
+
 </script>
 
 </body>
