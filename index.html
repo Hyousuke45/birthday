@@ -8,7 +8,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+    /* Full-page gradient background */
+    background: linear-gradient(135deg, #dfa7ff, #fee2ff);
+    background-repeat: no-repeat;       /* Prevent repeating */
+    background-attachment: fixed;       /* Stays fixed when scrolling */
+    background-size: cover;             /* Fill entire viewport */
+
     overflow-x: hidden;
     text-align: center;
 }
@@ -129,8 +135,8 @@ button {
     background: #fff;
     padding-right: 10%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(10px, 1fr));
-    grid-auto-rows: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-auto-rows: 5%; */
     gap: 10px;
     padding: 30px;
     transition: 0.8s;
@@ -152,7 +158,7 @@ button {
     /* ALWAYS 4 COLUMNS */
     grid-template-columns: repeat(4, 1fr);
 
-    grid-auto-rows: 100px;
+    /* grid-auto-rows: 100px; */
     gap: 10px;
 
     padding: 20px;
